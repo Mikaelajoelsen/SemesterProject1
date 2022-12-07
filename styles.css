@@ -2,29 +2,32 @@ body {
   background-color: rgb(47, 46, 46);
   width: 100%;
   height: auto;
-  overflow: hidden;
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .banner {
   position: relative;
-  width: 100%;
+  min-width: 450px;
+  background-image: url(./images/forsidebilde.png);
+  background-size: cover;
+  min-height: 100vh;
 }
 
-.banner img {
-  width: 100%;
-}
-
-.header {
-  position: absolute;
-  top: 80%;
-  margin-left: 18em;
+.heading-container {
   background-color: rgb(215, 208, 200);
-  height: 50%;
+  display: flex;
+  height: 200px;
+  gap: 40px;
+  flex-direction: column;
+  padding: 24px;
+  position: absolute;
+  bottom: 54px;
+  right: 24px;
 }
 
 .plan {
@@ -33,29 +36,331 @@ body {
   text-decoration: none;
 }
 
-li a {
+a {
   text-decoration: none;
-  list-style: none;
 }
 
 .menu {
   display: flex;
+  justify-content: flex-end;
   flex-direction: row;
-  position: absolute;
+  position: relative;
   top: 10%;
-  gap: 8px;
-  margin-left: 30em;
+  gap: 1px;
   list-style: none;
   font-size: 25px;
-  width: 450px;
+  max-width: 100%;
+}
+
+.menu li a:hover {
+  border-color: black;
+  font-size: larger;
+  text-decoration: solid;
 }
 
 .menu li a {
-  text-decoration: none;
+  display: flex;
+  text-decoration: underline;
   list-style: none;
-  margin: 35px;
+  margin: 7px;
   font-family: inherit;
-  color: rgb(255, 255, 255);
-  background-color: rgb(46, 45, 45);
-  padding: 4px 10px;
+  font-size: large;
+  color: rgb(40, 40, 40);
+  padding: 1px 7px;
+}
+
+.info {
+  display: flex;
+  justify-content: flex-start;
+  color: #fff;
+  font-size: 35px;
+}
+
+.free {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+  gap: 10px;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.book-online {
+  display: flex;
+  text-decoration: underline;
+  color: #fff;
+  font-size: 30px;
+}
+
+h2 {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.exhibition-container {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 450px;
+  height: 550px;
+  margin-left: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(2, 3, 3);
+  height: 550px;
+  width: 450px;
+  margin-left: 10px;
+  margin-top: 20px;
+  box-shadow: 5px 5px 30px 20px black;
+  transition: 300ms;
+}
+
+.card:hover {
+  height: 600px;
+  width: 450px;
+  color: rgb(224, 211, 211);
+  transform: scale(1.1);
+  z-index: 5;
+}
+
+.card-info {
+  height: 300px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 100px;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 30px;
+  color: #fff;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 25px;
+  align-items: center;
+  color: #fff;
+}
+
+.card-image {
+  height: 300px;
+  width: 450px;
+  border-radius: 3px;
+}
+
+button {
+  text-decoration: none;
+  border: 3px solid rgb(128, 244, 234);
+  margin-top: 20px;
+  margin-left: 110px;
+  color: transparent;
+  padding: 10px 20px;
+  font-size: 28px;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 0.5s;
+  position: relative;
+}
+button:before {
+  content: "Book here";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(128, 244, 234);
+  background: rgb(34, 34, 34);
+  font-size: 28px;
+  top: 0;
+  left: 100%;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(0) rotatey(0);
+  opacity: 0;
+}
+button:hover:before {
+  transform: scale(1) rotatey(360deg);
+  left: 0;
+  opacity: 1;
+}
+button:after {
+  content: "Book Here";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(128, 244, 234);
+  background: rgb(34, 34, 34);
+  font-size: 28px;
+  top: 0;
+  left: 0;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(1) rotatey(0);
+  opacity: 1;
+}
+button:hover:after {
+  transform: scale(0) rotatey(360deg);
+  left: -100%;
+  opacity: 0;
+}
+
+.explore-container {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 450px;
+  height: 550px;
+  margin-left: 10px;
+}
+
+.button2 {
+  text-decoration: none;
+  border: 3px solid rgb(255, 202, 245);
+  margin-top: 20px;
+  margin-left: 110px;
+  color: transparent;
+  padding: 10px 20px;
+  font-size: 28px;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 0.5s;
+  position: relative;
+}
+.button2:before {
+  content: "Book here";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 202, 245);
+  background: rgb(34, 34, 34);
+  font-size: 28px;
+  top: 0;
+  left: 100%;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(0) rotatey(0);
+  opacity: 0;
+}
+.button2:hover:before {
+  transform: scale(1) rotatey(360deg);
+  left: 0;
+  opacity: 1;
+}
+.button2:after {
+  content: "Book Here";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 202, 245);
+  background: rgb(34, 34, 34);
+  font-size: 28px;
+  top: 0;
+  left: 0;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(1) rotatey(0);
+  opacity: 1;
+}
+.button2:hover:after {
+  transform: scale(0) rotatey(360deg);
+  left: -100%;
+  opacity: 0;
+}
+
+h2 {
+  margin-top: 150px;
+}
+
+.shop-header {
+  background-color: rgb(215, 208, 200);
+  margin-top: 80px;
+  width: 500px;
+  height: 200px;
+}
+
+.members {
+  color: black;
+}
+
+.member-info {
+  color: black;
+}
+
+.visit-shop {
+  margin-left: 270px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  background-color: rgb(81, 78, 78);
+  width: 190px;
+  height: 30px;
+  text-align: center;
+}
+
+.shop-information {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(81, 78, 78);
+  width: 500px;
+}
+
+.email-adress {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  width: 120px;
+  font-size: 20px;
+}
+
+.opening-hours {
+  font-size: 10px;
+  width: 220px;
+  font-size: 20px;
+}
+
+.shortcuts {
+  font-size: 10px;
+  width: 120px;
+  font-size: 20px;
+}
+
+.follow {
+  font-size: 20px;
+  width: 120px;
 }

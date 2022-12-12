@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Semesterproject-agnesmikaela</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
   </head>
+
   <body>
     <header>
       <div class="container">
@@ -27,15 +33,17 @@
     </header>
     <main>
       <div class="info">
-        <p>
+        <p class="p-info">
           Come and join us at the Community Science Museum where we´re committed
           to making science accessable to all
         </p>
       </div>
-      <div class="free">
-        <a class="book-online" href="index.html">Free Entry- book online</a>
-        <p>Open today:10:00-17:00</p>
-        <p>Last Entry:16:00</p>
+      <div class="free1">
+        <div class="free">
+          <a class="book-online" href="index.html">Free Entry- book online</a>
+          <p>Open today:10:00-17:00</p>
+          <p>Last Entry:16:00</p>
+        </div>
       </div>
       <h2>Special Events And Exhibitions</h2>
       <div class="exhibition-container">
@@ -43,7 +51,11 @@
           <div class="card-info">
             <img class="card-image" src="images/andrew-ruiz.jpg" />
             <div class="information-date">
-              <h3>Visiting Professor of Aeronautics</h3>
+              <div class="li-header">
+                <li>
+                  <a href="exhibition.css"></a>Visiting Professor in Aeronautics
+                </li>
+              </div>
               <p>13.December 2022-13.February 2022</p>
               <button type="button">Book here</button>
             </div>
@@ -56,7 +68,11 @@
           <div class="card-info">
             <img class="card-image" src="images/energetica.png" />
             <div class="information-date">
-              <h3>Energetica Exhibition on Loan</h3>
+              <div class="li-header">
+                <li>
+                  <a href="exhibition.css"></a>Energetica Exhibition on Loan
+                </li>
+              </div>
               <p>13.December 2022-13.February 2022</p>
               <button type="button">Book here</button>
             </div>
@@ -64,12 +80,14 @@
         </div>
       </div>
 
-      <div class="explore-container">
+      <div class="exhibition-container">
         <div class="card">
           <div class="card-info">
             <img class="card-image" src="images/night-museum.jpg" />
             <div class="information-date">
-              <h3>Night In The Museum</h3>
+              <div class="li-header">
+                <li><a href="exhibition.css"></a>Night In The Museum</li>
+              </div>
               <p>13.December 2022-13.February 2022</p>
               <button type="button">Book here</button>
             </div>
@@ -84,7 +102,7 @@
             <div class="card-info">
               <img class="card-image" src="images/reading.jpg" />
               <div class="information-date">
-                <h3>For Kids</h3>
+                <a href="children.html">For Kids</a>
                 <p>
                   Are you a young person looking to learn more about science?
                   Come on down to our museum, there’s plenty to see and do.
@@ -100,7 +118,7 @@
             <div class="card-info">
               <img class="card-image" src="images/lærer.png" />
               <div class="information-date">
-                <h3>For Teachers</h3>
+                <a href="teachers.html">For Teachers</a>
                 <p>
                   As a community-driven museum, we want to work with schools to
                   create places of learning and exploring.
@@ -116,7 +134,7 @@
             <div class="card-info">
               <img class="card-image" src="images/scientific.jpg" />
               <div class="information-date">
-                <h3>Researchers</h3>
+                <a href="children.html">For Researchers</a>
                 <p>
                   Are you looking to get involved with our team of researchers
                   and academics?
@@ -192,7 +210,7 @@
           the Museum´s shops.
         </p>
         <div class="visit-shop">
-          <a hfref="index.html">Visit the Shop</a>
+          <a class="visit-box" href="index.html">Visit the Shop</a>
         </div>
       </div>
       <div class="shop-information">
@@ -203,33 +221,80 @@
           science even after you’ve left the museum.
         </p>
       </div>
+
+      <div class="shop-container">
+        <div class="shop-card">
+          <div class="card-info">
+            <img class="card-image" src="images/dinosaurleke.png" />
+            <div class="information-date">
+              <h3>Toys</h3>
+              <button class="button2" type="button">Shop here</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop-container">
+        <div class="shop-card">
+          <div class="card-info">
+            <img class="card-image" src="images/einstein.png" />
+            <div class="information-date">
+              <h3>Souveneirs</h3>
+              <button class="button2" type="button">Shop here</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop-container">
+        <div class="shop-card">
+          <div class="card-info">
+            <img class="card-image" src="images/kuleleke.png" />
+            <div class="information-date">
+              <h3>Inspired by science</h3>
+              <button class="button2" type="button">Shop here</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer>
-      <div class="email-adress">
-        <h3>Email-Adress</h3>
-        <p>Møllerparken 4, 0459, Oslo</p>
-        <p>communtysciencemuseum@hotmail.com</p>
-        <a href="contact.html">Contact Us</a>
-      </div>
-      <div class="opening-hours">
-        <h3>Opening hours</h3>
-        <p>
-          Monday: Closed Tuesday: 10:00 – 16:00 Wednesday: 10:00 – 16:00
-          Thursday: 10:00 – 16:00 Friday: 10:00 – 19:00 Saturday: 9:00 – 16:00
-          Sunday: 9:00 – 13:00
-        </p>
-      </div>
-      <div class="shortcuts">
-        <h3>Shortcuts</h3>
-        <a href="index.html">Membership</a>
-        <a href="index.html">Vacancies</a>
-        <a href="index.html">Privacy Policy</a>
-      </div>
-      <div class="follow">
-        <h3>Follow Us</h3>
-        <a href="index.html">Membership</a>
-        <a href="index.html">Vacancies</a>
-        <a href="index.html">Privacy Policy</a>
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="row-footer">
+          <div class="footer-col">
+            <h4>Adress</h4>
+            <ul>
+              <li class="footer.link">
+                <a href="#"></a>Møllerparken 4, 0459, Oslo
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Info</h4>
+            <ul>
+              <li class="footer-link"><a href="#"></a>Contact Us</li>
+              <li><a href="index.html"></a>Our services</li>
+              <li><a href="index.html"></a>Privacy Policy</li>
+              <li><a href="index.html"></a>Contact Us</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Short-cuts</h4>
+            <ul>
+              <li><a href="#"></a>Membership</li>
+              <li><a href="#"></a>Vacancies</li>
+              <li><a href="#"></a>Tickets</li>
+              <li><a href="#"></a>Opening Hours</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

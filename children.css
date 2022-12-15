@@ -5,13 +5,14 @@
   text-decoration: none;
 }
 
-.header {
+header {
   overflow: hidden;
-  background-color: rgb(70, 67, 67);
   padding: 20px 10px;
+  min-width: 320px;
+  width: 100%;
 }
 
-.header a {
+header a {
   float: left;
   color: rgb(247, 245, 245);
   text-align: center;
@@ -22,7 +23,7 @@
   border-radius: 4px;
 }
 
-.header {
+header {
   text-decoration: none;
   border: 3px solid rgb(255, 202, 245);
   margin-top: 20px;
@@ -34,26 +35,6 @@
   letter-spacing: 5px;
   transition: all 0.5s;
   position: relative;
-}
-
-.header:before {
-  content: "Book here";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(255, 202, 245);
-  background: rgb(34, 34, 34);
-  font-size: 28px;
-  top: 0;
-  left: 100%;
-  font-family: sans-serif;
-  letter-spacing: 5px;
-  transition: all 1s;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  transform: scale(10);
-  opacity: 0;
 }
 
 .logo-container {
@@ -96,13 +77,146 @@
   padding-right: 0;
 }
 
+.section3-cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.exhibition-container {
+  display: block;
+  padding: 10px;
+  margin: 20px;
+  min-width: 320px;
+  width: 40%;
+}
+
+.card {
+  display: block;
+  background-color: rgb(2, 3, 3);
+  height: 750px;
+  min-width: 320px;
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: 5px 5px 30px 20px black;
+  transition: 300ms;
+}
+
+.card:hover {
+  height: 750px;
+  min-width: 320px;
+  width: 100%;
+  color: rgb(224, 211, 211);
+  transform: scale(1.1);
+  z-index: 5;
+}
+
+.li-header {
+  text-decoration: underline;
+  list-style: none;
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 15px;
+  align-items: center;
+  color: rgb(255, 248, 248);
+}
+
+.kids-image {
+  height: 300px;
+  width: 100%;
+  border-radius: 3px;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+button {
+  display: flex;
+  text-decoration: none;
+  border: 3px solid rgb(128, 244, 234);
+  color: transparent;
+  padding: 10px 20px;
+  font-size: 28px;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 0.5s;
+  position: absolute;
+  margin-top: 370px;
+}
+button:before {
+  content: "Learn More";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(128, 244, 234);
+  background: rgb(34, 34, 34);
+  font-size: 28px;
+  top: 0;
+  left: 100%;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(0) rotatey(0);
+  opacity: 0;
+}
+button:hover:before {
+  transform: scale(1) rotatey(360deg);
+  left: 0;
+  opacity: 1;
+}
+button:after {
+  content: "Learn More";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(128, 244, 234);
+  background: rgb(34, 34, 34);
+  font-size: 28px;
+  top: 0;
+  left: 0;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(1) rotatey(0);
+  opacity: 1;
+}
+button:hover:after {
+  transform: scale(0) rotatey(360deg);
+  left: -100%;
+  opacity: 0;
+}
 @media screen and (max-width: 500px) {
   .header a {
     float: none;
     display: block;
     align-items: flex-start;
     margin-left: -20px;
-    font-size: 15px;
+    font-size: 10px;
   }
 
   .logo-container {

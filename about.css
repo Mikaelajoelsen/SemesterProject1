@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 65px;
+  text-decoration: underline;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+h3:hover {
+  font-size: 30px;
+  transform: scale(2);
+}
+
+.about-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: underline;
+  color: #fff;
+  position: relative;
+  font-size: 15px;
+}
+
+.location-container p {
+  font-size: 30px;
+  max-width: 800px;
+}
+
+.location-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.admission-container p {
+  font-size: 30px;
+  max-width: 800px;
+}
+
+.admission-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hours-container p {
+  font-size: 30px;
+  max-width: 800px;
+}
+
+.hours-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.access-container p {
+  font-size: 30px;
+  max-width: 800px;
+}
+
+.access-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.support-container p {
+  font-size: 30px;
+  max-width: 800px;
+}
+
+.support-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.volunteer-container p {
+  font-size: 30px;
+  max-width: 800px;
+}
+
+.volunteer-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.intern-container p {
+  font-size: 30px;
+  max-width: 800px;
+}
+
+.intern-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

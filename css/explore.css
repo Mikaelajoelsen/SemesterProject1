@@ -1,0 +1,22 @@
+.exhibition-container {
+  display: block;
+  padding: 10px;
+  margin: 20px;
+  min-width: 320px;
+  width: 30%;
+}
+
+.card {
+  display: block;
+  background-color: rgb(2, 3, 3);
+  height: 650px;
+  min-width: 320px;
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: 5px 5px 30px 20px black;
+  transition: 300ms;
+}
+
+p {
+  font-size: 18px;
+}

@@ -30,8 +30,8 @@ body {
 }
 
 .banner {
-  min-width: 320px;
-  background-image: url(./images/forsidebilde.png);
+  width: 100%;
+  background-image: url(/images/astronaut2.jpg);
   background-size: cover;
   min-height: 100vh;
 }
@@ -73,19 +73,19 @@ a {
 
 .menu li a {
   display: flex;
-  text-decoration: underline;
+  text-decoration: none;
   list-style: none;
   margin: 7px;
   font-family: inherit;
-  font-size: 25px;
-  color: rgb(40, 40, 40);
+  font-size: 20px;
+  color: rgb(255, 255, 255);
   padding: 1px 7px;
   text-transform: uppercase;
   transition: 0.5 ease;
 }
 
 .menu li a:hover {
-  font-size: larger;
+  font-size: 30px;
 }
 
 .p-info {
@@ -134,17 +134,17 @@ a {
   justify-content: center;
   align-items: center;
   margin-left: 20px;
-  color: #fff;
+  color: rgb(57, 106, 110);
   margin-top: 20px;
   font-size: 60px;
-  text-decoration: none;
   transition: 00.5s ease;
   list-style: none;
 }
 
 .exhibition-spaces a:hover {
-  color: #fff;
-  text-shadow: 0 0 10px rgb(255, 255, 255);
+  color: rgb(155, 214, 217);
+  text-shadow: 0 0 10px rgb(200, 255, 243);
+  font-size: 65px;
 }
 
 .section1-cards {
@@ -329,9 +329,10 @@ button:hover:after {
 }
 
 .shop-card {
-  background-color: rgb(215, 208, 200);
+  background-color: rgb(177, 159, 177);
   height: 550px;
   min-width: 320px;
+  border: 5px solid white;
   width: 30%;
   margin-top: 30px;
   box-shadow: 5px 5px 30px 20px black;
@@ -342,7 +343,7 @@ button:hover:after {
   height: 600px;
   width: 40%;
   min-width: 320px;
-  color: rgb(215, 208, 200);
+  color: rgb(191, 255, 245);
   transform: scale(1.1);
   z-index: 5;
 }
@@ -461,7 +462,7 @@ h2 {
 footer {
   display: flex;
   flex-direction: row;
-  background-color: rgb(81, 78, 78);
+  background-color: rgb(149, 151, 133);
   min-width: 500px;
 }
 

@@ -28,6 +28,7 @@ header a {
   font-size: 15px;
   line-height: 5px;
   border-radius: 4px;
+  flex-wrap: nowrap;
 }
 
 header {

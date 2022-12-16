@@ -70,7 +70,7 @@ header {
 
 .navigation {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .navigation a {

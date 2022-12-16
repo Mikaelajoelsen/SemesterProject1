@@ -18,6 +18,8 @@ header {
 }
 
 header a {
+  display: flex;
+  flex-direction: row;
   float: left;
   color: rgb(247, 245, 245);
   text-align: center;

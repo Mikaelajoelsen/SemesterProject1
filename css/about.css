@@ -4,6 +4,82 @@
   box-sizing: border-box;
 }
 
+header {
+  overflow: hidden;
+  padding: 20px 10px;
+  min-width: 320px;
+  width: 100%;
+}
+
+header a {
+  display: flex;
+  flex-direction: row;
+  float: left;
+  color: rgb(247, 245, 245);
+  text-align: center;
+  padding: 15px;
+  text-decoration: underline;
+  font-size: 15px;
+  line-height: 5px;
+  border-radius: 4px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-decoration: none;
+  border: 3px solid rgb(255, 202, 245);
+  margin-top: 20px;
+  margin-left: 0px;
+  color: transparent;
+  padding: 0px 20px;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.logo-container {
+  height: 100%;
+  display: flex;
+  float: left;
+}
+
+.logo-container h1 {
+  color: #fff;
+  height: 100%;
+  align-self: center;
+  font-family: sans-serif;
+  font-size: 35px;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container h1 span {
+  font-weight: 900;
+  color: rgb(237, 218, 255);
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.navigation a {
+  width: auto;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5s ease;
+}
+
+.navigation a:last-child {
+  padding-right: 0;
+}
+
 h2 {
   display: flex;
   justify-content: center;

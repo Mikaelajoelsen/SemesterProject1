@@ -17,6 +17,7 @@ header a {
   flex-direction: row;
   float: left;
   color: rgb(247, 245, 245);
+  text-align: center;
   padding: 15px;
   text-decoration: underline;
   font-size: 15px;
@@ -25,13 +26,15 @@ header a {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   text-decoration: none;
   border: 3px solid rgb(255, 202, 245);
   margin-top: 20px;
   margin-left: 0px;
   color: transparent;
   padding: 0px 20px;
-  font-size: 28px;
   font-family: sans-serif;
   letter-spacing: 5px;
   transition: all 0.5s;
@@ -48,10 +51,11 @@ header {
   color: #fff;
   height: 100%;
   align-self: center;
-  margin-top: 150px;
   font-family: sans-serif;
-  font-size: 25px;
+  font-size: 35px;
   font-weight: 100;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-container h1 span {
@@ -60,18 +64,17 @@ header {
 }
 
 .navigation {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.navigation a {
   width: auto;
-  padding: 5%;
-  height: 100%;
+  font-size: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   transition: 0.5s ease;
-}
-
-.navigation:hover {
-  color: blueviolet;
-  font-size: 30px;
 }
 
 .navigation a:last-child {
